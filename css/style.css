@@ -16,6 +16,7 @@ a{
     border-color: rgba(61, 61, 61, 0.169) !important;
 }
 .notifi-bar{
+    z-index: 99991;
     display: flex;
     align-items: center;
     position: fixed;
