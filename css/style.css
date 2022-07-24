@@ -1,0 +1,608 @@
+*{
+    box-sizing: border-box;
+}
+ul,li{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.border{
+    border-color: rgba(61, 61, 61, 0.169) !important;
+}
+.notifi-bar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+}
+.notifi-bar i{
+    font-size: 20px;
+    margin: 0 8px;
+    
+}
+.notifi-bar .date p{
+    margin-bottom: 0;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* .windows-11::before{
+    content: "";
+    background: rgba(255, 255, 255, 0);
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+} */
+.header-icon p{
+    font-size: 16px;
+}
+.windows-11{
+    background: url(../img/windows-11.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+.header-icon{
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header-icon .icon img{
+    width: 60%;
+}
+.header-icon .icon{
+    width: 110px;
+}
+.header-icon .microsoft-edge{
+    position: relative;
+}
+.header-icon .microsoft-edge i {
+    position: absolute;
+    left: 33px;
+    bottom: 57px;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+    color: rgb(3, 51, 114);
+    font-size: 14px;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.933);
+    text-align: center;
+    line-height: 15px;
+}
+.nav-bar-bottom {
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.886);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+
+}
+.nav-bar-bottom ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-bottom ul li{
+    margin: 0 15px;
+    padding: 10px 0;
+}
+.nav-bar-bottom ul img{
+    min-width: 20px;
+    width: 100%;
+}
+
+
+/* home rap 
+............................................. */
+
+.home-wrap{
+    padding: 30px 0;
+}
+.home-wrap .main-wrap{
+    width: 650px;
+    margin:0 auto;
+    background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 50px 20px 20px 20px;
+height: 85vh;
+
+
+}
+.home-wrap .pined{
+    display: flex;
+    justify-content: space-between;
+}
+.home-wrap .pined button i{
+    display: inline-block;
+    padding:0 10px;
+}
+.home-wrap .pined button{
+    border: 1px solid rgba(55, 55, 55, 0.455);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.home-wrap ul{
+    padding-right: 0;
+}
+.home-wrap ul img{
+    width: 50px;
+}
+.home-wrap  ul .home-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-icon-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.home-icon-wrap .row-wrap li{
+    margin-top: 30px;
+}
+.home-icon-wrap .row-wrap li a{
+    font-size: 15px;
+    color: #111;
+    font-weight: 600;
+    text-align: center;
+}
+.reco-use{
+    display: flex;
+    
+}
+.reco-use .one-text{
+    margin-left: 20px;
+}
+.reco-use .one-text h6{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.reco-use .one-text p{
+    font-size: 14px;
+}
+.reco-use .onedrive{
+    flex: 50%;
+    display: flex;
+}
+.reco-use .getstart{
+    flex: 50%;
+    display: flex;
+}
+.reco-use .onedr-icon{
+    width: 50px;
+}
+.reco-use .getst-icon{
+    width: 50px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    bottom: 40px;
+   
+    
+}
+.user-info .user i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #fff;
+}
+.user-info .user p{
+    font-size: 15px;
+    margin-bottom: 0;
+    align-self: center;
+}
+.user-info .user{
+    display: flex;
+}
+.main-wrap::before{
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.283);
+    width: 95%;
+    position: fixed;
+    bottom: 100px;
+}
+#power{
+    cursor: pointer;
+    position: relative;
+}
+.fullscreen button:hover{
+    background: #ddd;
+}
+.fullscreen{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 150px;
+    
+    
+}
+.fullscreen button{
+    display: inline-block;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    transition: .4s;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    
+    
+}
+/* ....................................................... */
+
+.scarch-wrap{
+    padding: 0px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.scarch-wrap .scarchmain{
+    width: 650px;
+    margin:110px auto;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 50px 20px 20px 20px;
+    
+
+
+}
+.scarch-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.scarch-nav .scr-navitm{
+    display: flex;
+    
+}
+.scarch-nav .scr-navitm li a{
+    color: #111;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.scarch-nav .scr-icon{
+    display: flex;
+}
+.scarch-nav .scr-icon li a{
+    color: #111;
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.topapp {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap;
+    align-content: flex-start; */
+}
+.topapp .ico-folder{
+    text-align: center;
+    width: 19%;
+    height: 100px;
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.topapp .ico-folder img{
+    width: 50px;
+}
+.topapp .ico-folder p{
+    font-size: 14px;
+}
+
+.resend-uses{
+    display: flex;
+}
+.resend-uses p{
+    font-size: 15px;
+    margin-bottom: 0;
+    
+}
+.resend-uses .resimg{
+    width: 25px;
+}
+.resend-uses .recuser {
+    flex: 50%;
+
+}
+.resend-uses .res-right {
+    display: flex;
+}
+.resend-uses .res-left {
+    flex: 50%;
+}
+.resend-uses .res-left li i{
+    display: inline-block;
+    margin: 0 12px;
+    
+}
+.resend-uses .res-left li a{
+    color: #111;
+    font-size: 15px;
+   
+}
+/* ////////////////////////////////////////////////////////// */
+/* folder-start */
+/* folder-wrap */
+.folder-wrap .folder-main{
+    width: 1100px ;
+    min-width: 800px;
+    margin:110px auto;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 5px 5px 20px 5px;
+    height: 690px;
+}
+
+.folder-wrap .header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.folder-wrap .head-left{
+    display: flex;
+    align-items: center;
+}
+.folder-wrap  .head-left div{
+    margin: 0 5px;
+}
+.folder-wrap .head-left img{
+    width: 30px;
+}
+.folder-wrap .head-left p{
+    font-size: 14px;
+    font-weight:500;
+    margin-bottom: 0;
+}
+.folder-wrap .head-left .horigental-line{
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 16px;
+    align-self: center;
+    color: rgba(17, 17, 17, 0.518);
+}
+.folder-wrap .head-left .text{
+    display: flex;
+    align-items: center;
+}
+.folder-wrap .head-right{
+    display: flex;
+    align-items: center;
+}
+.folder-wrap .head-right i{
+    margin: 0 10px;
+    font-size: 16px;
+    color: #111;
+}
+.folder-wrap .tabbs-1 button{
+    font-size: 11px;
+    color: #111;
+    padding: 3px 8px;
+    border-top-left-radius: .15rem;
+    border-top-right-radius: .15rem;
+    background-color: transparent;
+}
+.folder-wrap .tabbs-1 .my-nav-tabs i{
+    font-size: 10px;
+}
+
+/* tabsss */
+
+.folder-wrap .clipboard-wrap{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.folder-wrap .clipboard-wrap .clip-1-bottom p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.folder-wrap .clipboard-wrap .clip-1 .clip-1-top .clop-left{
+    display: flex;
+}
+.folder-wrap .clipboard-wrap .clip-1 .clip-1-top {
+    display: flex;
+    justify-content: space-between;
+}
+.folder-wrap .clipboard-wrap .clip-1{
+    text-align: center;
+}
+.folder-wrap .clipboard-wrap .clop-left .clip-1 i{
+    font-size: 30px;
+}
+.folder-wrap .clipboard-wrap .clip-1 .pin-roted{
+    transform: rotate(45deg);
+    color: rgba(148, 148, 148, 0.669);
+}
+.folder-wrap .clipboard-wrap .clip-1 p{
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 12px;
+    margin-left: 7px;
+}
+.folder-wrap .clipboard-wrap .clip-1 .clip-icon-1 {
+    text-align: center;
+}
+.folder-wrap .clipboard-wrap .clip-1  .clop-right{
+    margin-left: 20px !important;
+}
+.folder-wrap .clipboard-wrap .clip-1  .clop-right .clop-icon{
+    display: flex;
+}
+
+.folder-wrap .clipboard-wrap .clip-1  .clop-right .clop-icon .cut-ms-1{
+    margin-left: 5px;
+    transform: rotate(-90deg);
+}
+.folder-wrap .clipboard-wrap .clip-1  .clop-right .clop-icon i{
+    font-size: 14px;
+}
+.folder-wrap .clipboard-wrap i{
+    color: rgb(80, 80, 80) !important;
+}
+input,input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+/* foldersss/ */
+.folders{
+    display: flex;
+}
+.folder-wrap .hide-bottom{
+    transition: .4s;
+}
+.folder-wrap .hide-bottom:hover{
+    background-color: rgb(255, 99, 99);
+}
+.folders .folder-left{
+    min-width: 195px;
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 48vh;
+}
+
+
+
+/* quickfolder  */
+.folders .folder-left h6{
+    font-size: 14px;
+    margin-bottom: 0;
+    
+}
+.folders .folder-left .folder-quick{
+    align-items: center;
+    padding: 5px 10px;
+}
+.folders .folder-left .quick-sub-pc{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.folders .folder-left .quick-sub-pc .imgg{
+    width: 15px;
+}
+.folders .folder-left .quick-sub-pc p{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.folders .folder-left .quick-pin i {
+    transform: rotate(45deg);
+    color: #7b7b7b;
+    font-size: 12px;
+}
+
+.folders .folder-right{
+    width: 78%;
+}
+.folders .folder-right .folder-sec{
+    display: flex;
+}
+.folders .folder-right .herader p{
+    font-size: 15px;
+    font-weight: 500;
+    width: 200px;
+    margin-bottom: 0;
+}
+.folders .folder-right .herader i{
+    font-size: 14px;
+}
+.folders .folder-right .herader .my-border{
+    width: 100%;
+    height: 1px;
+    background: rgba(27, 27, 27, 0.326);
+}
+.folders .folder-right .desktop .des-img{
+    width: 85px;
+}
+  
+
+.folders .folder-right .desktop .des-text{
+    margin-left: 15px;
+}
+.folders .folder-right .desktop h6{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.folders .folder-right .desktop p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.folders .folder-right .desktop i{
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: rotate(45deg);
+    color: rgba(20, 20, 20, 0.559)
+}
+.folders .folder-right .recent-one{
+    display: flex;
+    align-items: center;
+}
+.folders .folder-right .rec-img{
+    width: 25px;
+    margin-right: 25px;
+}
+.folders .folder-right .recent-one p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
